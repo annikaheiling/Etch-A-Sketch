@@ -1,0 +1,28 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+#sketchContainer {
+    /*background-color: aqua;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 960px;
+    max-height: 960px;
+    /*How to center self? may need container around it*/
+    /*yes I know its awful and bad I'll fix it later...*/
+    /*grid-row-gap: 2px;
+    grid-column-gap: 2px;*/
+}
+.sq {
+    color: blueviolet;
+    border-style: solid;
+    border-color: black;
+    border-width: .05em;
+}
+.sq:hover {
+   background-color: black; 
+}
+
+.colored {
+    background-color: black; 
+}
