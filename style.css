@@ -1,3 +1,12 @@
+/*:root {
+    --colNum: 100;
+    --sqSize: 50px;
+}*/
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -5,24 +14,31 @@ h1 {
 #sketchContainer {
     /*background-color: aqua;*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    max-width: 960px;
     max-height: 960px;
-    /*How to center self? may need container around it*/
-    /*yes I know its awful and bad I'll fix it later...*/
-    /*grid-row-gap: 2px;
-    grid-column-gap: 2px;*/
+    max-width: 1440px;
+    margin-bottom: 15px;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(var(--colNum), auto);
+    grid-template-rows: 100%;
 }
 .sq {
     color: blueviolet;
     border-style: solid;
     border-color: black;
     border-width: .05em;
+    height: 15px;
 }
-.sq:hover {
-   background-color: black; 
-}
-
 .colored {
     background-color: black; 
+    border-style: solid;
+    border-color: black;
+    border-width: .05em;
+    /*height: MAKE SAME AS .sq HEIGHT*/
+}
+#restart {
+    width: 10%;
+    height: 8%;
+    max-width: 100px;
 }
