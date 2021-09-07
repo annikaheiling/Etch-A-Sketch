@@ -29,7 +29,7 @@ function gridGenerator(userDims) {
     window.getComputedStyle(document.documentElement).getPropertyValue('--colNum'); ///
     document.documentElement.style.setProperty("--colNum", userDims);
     //window.getComputedStyle(document.documentElement).getPropertyValue('--sqSize'); ///
-    //document.documentElement.style.setProperty("--sqSize",);
+    //document.documentElement.style.setProperty("--sqSize",); //AAAh
 }
 gridGenerator(userDims);
 

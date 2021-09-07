@@ -5,6 +5,8 @@
 body {
     display: flex;
     flex-direction: column;
+    color: #2e5266;
+    background-color: #acbed8;;
 }
 
 h1 {
@@ -12,7 +14,7 @@ h1 {
     justify-content: center;
 }
 #sketchContainer {
-    /*background-color: aqua;*/
+    background-color: #e8ebf7;
     display: grid;
     max-height: 960px;
     max-width: 1440px;
@@ -38,7 +40,12 @@ h1 {
     /*height: MAKE SAME AS .sq HEIGHT*/
 }
 #restart {
-    width: 10%;
-    height: 8%;
-    max-width: 100px;
+    min-height: 40px;
+    max-height: 150px;
+    min-width: 80px;
+    max-width: 200px;
+    background-color: #f25f5c;
+    border: none;
+    color: #2e5266;
+    text-align: center;
 }
